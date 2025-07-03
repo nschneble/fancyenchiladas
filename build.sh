@@ -6,6 +6,9 @@ cp robots.txt public/robots.txt
 cp sitemap.xml public/sitemap.xml
 
 # create the html folder structure
+mkdir public/cats public/haiku-engine
+cp html/cats.html public/cats/index.html
+cp html/haiku-engine.html public/haiku-engine/index.html
 cp html/index.html public/index.html
 
 # compile css
