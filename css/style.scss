@@ -36,3 +36,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+// flexible layout
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+// prefers a two-column flexible layout
+.flex-col-2 {
+  flex: 0 0 calc((100% - 10px) / 2);
+}
+
+// transforms to a single column layout on mobile
+@media (max-width: $max-width) {
+  .flex-col-2 {
+    flex: 0 0 100%;
+  }
+}
