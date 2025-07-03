@@ -1,0 +1,38 @@
+// variables
+$lite-page-color: #ccfbf1;
+$dark-page-color: #134e4a;
+$lite-link-color: #fffeeb;
+$max-width: 650px;
+
+// styles
+body {
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: $dark-page-color;
+  color: $lite-page-color;
+  max-width: $max-width;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+a:link,
+a:visited {
+  color: $lite-link-color;
+  text-decoration: none;
+}
+
+a:link:hover,
+a:visited:hover {
+  text-decoration: underline;
+}
+
+// responsive images
+img {
+  max-width: 100%;
+  height: auto;
+}
