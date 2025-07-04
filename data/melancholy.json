@@ -1,13 +1,16 @@
 {
 	"one": [
+		"fear",
 		"hear",
 		"tell"
 	],
 	"two": [
 		"soul",
+		"spell",
 		"tale"
 	],
 	"three": [
+		"fierce",
 		"old",
 		"wild"
 	],
@@ -16,14 +19,17 @@
 		"yet"
 	],
 	"five": [
+		"demanding",
 		"desperate",
 		"sorrowful"
 	],
 	"six": [
 		"cold",
-		"filled"
+		"filled",
+		"lost"
 	],
 	"seven": [
+		"a dread",
 		"remorse",
 		"unease"
 	]

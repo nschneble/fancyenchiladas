@@ -1,15 +1,18 @@
 {
 	"one": [
 		"dream",
-		"joke"
+		"joke",
+		"tease"
 	],
 	"two": [
 		"beach",
+		"home",
 		"pet"
 	],
 	"three": [
 		"pristine",
-		"scraggly"
+		"scraggly",
+		"tiny"
 	],
 	"four": [
 		"and",
@@ -17,14 +20,17 @@
 	],
 	"five": [
 		"feisty",
-		"lively"
+		"lively",
+		"unique"
 	],
 	"six": [
 		"jumping",
-		"laughing"
+		"laughing",
+		"spinning"
 	],
 	"seven": [
 		"joy",
+		"murth",
 		"warmth"
 	]
 }

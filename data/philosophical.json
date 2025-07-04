@@ -1,15 +1,18 @@
 {
 	"one": [
 		"learn",
-		"think"
+		"think",
+		"write"
 	],
 	"two": [
+		"map",
 		"place",
 		"time"
 	],
 	"three": [
 		"small",
-		"vast"
+		"vast",
+		"vague"
 	],
 	"four": [
 		"though",
@@ -17,14 +20,17 @@
 	],
 	"five": [
 		"animated",
-		"chaotic"
+		"chaotic",
+		"colorful"
 	],
 	"six": [
 		"beset",
-		"stilled"
+		"stilled",
+		"whelmed"
 	],
 	"seven": [
 		"delight",
+		"fervor",
 		"intrigue"
 	]
 }
