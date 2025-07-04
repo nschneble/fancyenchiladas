@@ -29,20 +29,24 @@
 	</head>
 	<body>
 		<div style="background: rgba(0,0,0,0.65); color: white; padding: 20px;">
-			<h1>Haiku Engine</h1>
-			<p><strong>July 3, 2025<br>Beverly</strong></p>
-			<p id="placeholder">
-				&nbsp;<br>
-				&nbsp;<br>
-				&nbsp;
-			</p>
-			<p class="hidden" id="haiku">
-				I <span id="one"></span> of a <span id="two"></span><br>
-				It is <span id="three"></span> <span id="four"></span> <span id="five"></span><br>
-				I'm <span id="six"></span> with <span id="seven"></span>
-			</p>
+			<header>
+				<h1>Haiku Engine</h1>
+				<p><strong>July 3, 2025<br>Beverly</strong></p>
+			</header>
+			<main>
+				<p id="placeholder">&nbsp;<br>&nbsp;<br>&nbsp;</p>
+				<p class="hidden" id="haiku">
+					I <span id="one"></span> of a <span id="two"></span><br>
+					It is <span id="three"></span> <span id="four"></span> <span id="five"></span><br>
+					I'm <span id="six"></span> with <span id="seven"></span>
+				</p>
+			</main>
 			<hr>
-			<p><small>↻ <a href="/haiku-engine/">Generate another</a><br>← <a href="/">Back to list</a></small></p>
+			<footer>
+				<nav>
+					<p><small>↻ <a href="/haiku-engine/">Generate another</a><br>← <a href="/">Back to list</a></small></p>
+				</nav>
+			</footer>
 		</div>
 		<script type="module">
 			/*global document fetch */

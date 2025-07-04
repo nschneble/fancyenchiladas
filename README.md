@@ -8,6 +8,8 @@ Browse. Enjoy! [Email me](mailto:nick@fancyenchiladas.net) if you want to chat a
 
 ---
 
+## Entries
+
 ### [2025.07.03 Haiku Engine](https://fancyenchiladas.net/haiku-engine/)
 ### [2025.06.21 Cats](https://fancyenchiladas.net/cats/)
 
