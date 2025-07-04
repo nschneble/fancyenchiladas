@@ -1,23 +1,30 @@
 {
 	"one": [
-		"dream"
+		"dream",
+		"joke"
 	],
 	"two": [
-		"place"
+		"beach",
+		"pet"
 	],
 	"three": [
-		"vast"
+		"pristine",
+		"scraggly"
 	],
 	"four": [
-		"yet"
+		"and",
+		"but"
 	],
 	"five": [
-		"minuscule"
+		"feisty",
+		"lively"
 	],
 	"six": [
-		"jumping"
+		"jumping",
+		"laughing"
 	],
 	"seven": [
-		"joy"
+		"joy",
+		"warmth"
 	]
 }

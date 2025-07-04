@@ -1,23 +1,30 @@
 {
 	"one": [
-		"dream"
+		"learn",
+		"think"
 	],
 	"two": [
-		"place"
+		"place",
+		"time"
 	],
 	"three": [
+		"small",
 		"vast"
 	],
 	"four": [
+		"though",
 		"yet"
 	],
 	"five": [
-		"minuscule"
+		"animated",
+		"chaotic"
 	],
 	"six": [
-		"filled"
+		"beset",
+		"stilled"
 	],
 	"seven": [
+		"delight",
 		"intrigue"
 	]
 }
