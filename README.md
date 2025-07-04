@@ -2,7 +2,7 @@
 
 Welcome to my blog! It's not about fancy enchiladas. It's also not really a blog.
 
-The entries below are little experiments. Creative bursts that I finally saw fit to give shape and color. They're dated for the sake of some implicit organization. They aren't remotely connected to one another.
+The entries below are little experiments. Creative bursts that I saw fit to give shape and color. They're dated for the sake of some implicit organization. They aren't remotely connected.
 
 Browse. Enjoy! [Email me](mailto:nick@fancyenchiladas.net) if you want to chat about them.
 
