@@ -55,3 +55,9 @@ img {
     flex: 0 0 100%;
   }
 }
+
+// when code needs to be sneaky
+.hidden {
+  display: none;
+  visibility: hidden;
+}

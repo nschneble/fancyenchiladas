@@ -10,11 +10,58 @@
 		<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
 		<link rel="shortcut icon" href="/images/favicon.ico">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+		<style>
+			body {
+				background: white;
+				color: black;
+
+				background-image: url("/images/kyoto-forest.jpg");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+
+			a:link,
+			a:visited {
+				color: white;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Haiku Engine</h1>
-		<p>Numquam numquam ex et quia non adipisci modi. Nisi nemo recusandae quasi repellendus eaque optio nostrum. Optio ut assumenda necessitatibus perferendis et est quae dolorum. Excepturi numquam omnis hic delectus.</p>
-		<hr>
-		<p><small>← <a href="/">Back to list</a></small></p>
+		<div style="background: rgba(0,0,0,0.65); color: white; padding: 20px;">
+			<h1>Haiku Engine</h1>
+			<p><strong>July 3, 2025<br>Beverly</strong></p>
+			<p id="placeholder">
+				&nbsp;<br>
+				&nbsp;<br>
+				&nbsp;
+			</p>
+			<p class="hidden" id="haiku">
+				I <span id="one"></span> of a <span id="two"></span><br>
+				It is <span id="three"></span> <span id="four"></span> <span id="five"></span><br>
+				I'm <span id="six"></span> with <span id="seven"></span>
+			</p>
+			<hr>
+			<p><small>← <a href="/">Back to list</a></small></p>
+		</div>
+		<script type="module">
+			/*global document fetch */
+			const emotions = ["happy", "melancholy", "philosophical"];
+			const emotion = emotions[Math.floor(Math.random() * emotions.length)];
+			fetch(`/data/${emotion}.json`)
+				.then(response => response.json())
+				.then(data => {
+					const words = ["one", "two", "three", "four", "five", "six", "seven"];
+					for (let word of words) {
+						var choices = data[word];
+						var choice = choices[Math.floor(Math.random() * choices.length)];
+						document.getElementById(word).innerHTML = choice;
+					}
+				})
+				.finally(() => {
+					document.getElementById("placeholder").classList.add("hidden");
+					document.getElementById("haiku").classList.remove("hidden");
+				});
+		</script>
 	</body>
 </html>

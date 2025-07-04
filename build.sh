@@ -15,6 +15,10 @@ cp html/index.html public/index.html
 mkdir public/css
 sass css/style.scss public/css/style.css
 
+# copy data files
+mkdir public/data
+cp data/* public/data
+
 # copy images and favicons
 mkdir public/images
 cp images/* public/images
