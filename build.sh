@@ -6,13 +6,15 @@ cp robots.txt public/robots.txt
 cp sitemap.xml public/sitemap.xml
 
 # create the html folder structure
-mkdir public/cats public/haiku-engine
+mkdir public/book-doodles public/cats public/haiku-engine
+cp html/book-doodles.html public/book-doodles/index.html
 cp html/cats.html public/cats/index.html
 cp html/haiku-engine.html public/haiku-engine/index.html
 cp html/index.html public/index.html
 
 # compile css
 mkdir public/css
+sass css/phone.scss public/css/phone.css
 sass css/style.scss public/css/style.css
 
 # copy data files
@@ -22,3 +24,7 @@ cp data/* public/data
 # copy images and favicons
 mkdir public/images
 cp images/* public/images
+
+# copy javascript
+mkdir public/js
+cp js/* public/js

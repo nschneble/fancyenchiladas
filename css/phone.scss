@@ -1,0 +1,163 @@
+// variables
+$dark-background-color: #1e1e1e;
+$sunglow-color: #ffd52e;
+$ghost-white-color: #f9f9f9;
+$platinum-color: #e5e5e5;
+$max-width: 650px;
+
+// styles
+body {
+	background-color: $sunglow-color;
+	color: $ghost-white-color;
+}
+
+@media (max-width: $max-width) {
+	body {
+		background-color: $dark-background-color;
+	}
+}
+
+main {
+	background-color: $dark-background-color;
+	border-radius: 55px;
+	padding: 20px;
+	margin-bottom: 100px;
+}
+
+@media (max-width: $max-width) {
+	main {
+		padding: 0;
+		margin-bottom: 0;
+	}
+}
+
+.status-bar {
+	display: flex;
+	align-items: center;
+	margin: 0 40px 25px 80px;
+}
+
+@media (max-width: $max-width) {
+	.status-bar {
+		margin: -20px 20px 20px 40px;
+	}
+}
+
+.status-bar-icons {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.navigation-bar {
+	display: flex;
+	color: $sunglow-color;
+}
+
+.navigation-bar-title {
+	font-size: 24px;
+	align-items: center;
+}
+
+.navigation-bar-icons {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.content-area {
+	margin: 0 40px;
+}
+
+@media (max-width: $max-width) {
+	.content-area {
+		margin: 0 10px;
+	}
+}
+
+.content-area-title {
+	margin-bottom: 0;
+}
+
+.content-area-subtitle {
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+.polaroid-edges {
+	position: relative;
+	background-color: $ghost-white-color;
+	border-radius: 2px;
+	padding: 20px 20px 60px;
+	margin-bottom: 70px;
+	transform: rotate(0.5deg);
+	box-shadow:
+		0 0 0 1px rgba(255,255,255,0.1),
+		0 6px 10px rgba(0,0,0,0.55),
+		0 22px 40px rgba(0,0,0,0.40),
+		0 48px 80px rgba(0,0,0,0.35);
+}
+
+.polaroid-edges::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 10%;
+	right: 10%;
+	bottom: -10px;
+	height: 18px;
+	background: radial-gradient(ellipse at center,
+							rgba(0,0,0,0.55) 0%,
+							rgba(0,0,0,0.25) 55%,
+							transparent 75%);
+	filter: blur(8px);
+}
+
+.polaroid-edges::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 2px;
+	pointer-events: none;
+	box-shadow:
+		inset 0 1px 0 rgba(255,255,255,0.55),
+		inset 0 -1px 0 rgba(0,0,0,0.04);
+}
+
+.polaroid-img {
+	border-radius: 2px;
+	filter:
+		brightness(150%)
+		saturate(150%)
+		drop-shadow(0 10px 20px rgba(0,0,0,0.35));
+}
+
+.toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 140px;
+	color: $sunglow-color;
+}
+
+@media (max-width: $max-width) {
+	.toolbar {
+		margin-top: 100px;
+	}
+}
+
+.home-indicator {
+	background-color: $ghost-white-color;
+	width: 40%;
+	height: 6px;
+	margin: 50px auto 0;
+	border-radius: 9999px;
+}
+
+@media (max-width: $max-width) {
+	.home-indicator {
+		margin: 40px auto -20px;
+	}
+}

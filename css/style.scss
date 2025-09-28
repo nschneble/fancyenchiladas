@@ -39,14 +39,20 @@ img {
 
 // flexible layout
 .flex {
+  --flex-gap: 10px;
+
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: var(--flex-gap);
+}
+
+.flex-comfy {
+  --flex-gap: 20px;
 }
 
 // prefers a two-column flexible layout
 .flex-col-2 {
-  flex: 0 0 calc((100% - 10px) / 2);
+  flex: 0 0 calc((100% - var(--flex-gap)) / 2);
 }
 
 // transforms to a single column layout on mobile
